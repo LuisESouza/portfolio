@@ -16,7 +16,10 @@ const Icons: React.FC<IconsProps> = ({icons}) => {
     return(
         <div className="flex flex-wrap gap-4">
             {icons.map((icon) => (
-                <Link href={icon.link}
+                <Link 
+                href={icon.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={icon.id}
                 className="hover:text-[var(--bg-button)]"
                 >
