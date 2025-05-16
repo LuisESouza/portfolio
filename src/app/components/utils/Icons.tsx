@@ -4,19 +4,19 @@ interface IconsConfig {
     id: string;
     icon: string;
     size: string;
+    link: string;
 }
 
 interface IconsProps {
   icons: IconsConfig[];
-  link: string;
 }
 
 
-const Icons: React.FC<IconsProps> = ({icons, link}) => {
+const Icons: React.FC<IconsProps> = ({icons}) => {
     return(
         <div className="flex flex-wrap gap-4">
             {icons.map((icon) => (
-                <Link href={''}
+                <Link href={icon.link}
                 key={icon.id}
                 className="hover:text-[var(--bg-button)]"
                 >

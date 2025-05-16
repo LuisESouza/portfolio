@@ -37,11 +37,10 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <Icons
             icons={[
-              { id: "1", icon: "github", size: "1.5" },
-              { id: "2", icon: "linkedin", size: "1.5" },
-              { id: "3", icon: "instagram", size: "1.5" },
+              { id: "1", icon: "github", size: "1.5", link: "https://github.com/LuisESouza" },
+              { id: "2", icon: "linkedin", size: "1.5", link: "https://www.linkedin.com/in/lu%C3%ADs-souza-589452268/" },
+              { id: "3", icon: "instagram", size: "1.5", link: "https://www.instagram.com/luis_e_souza/" },
             ]}
-            link=""
           />
           <p className="text-sm text-gray-400">
             leduardosouza2204@gmail.com
