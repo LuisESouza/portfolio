@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @import "tailwindcss";
 
+
 :root {
-  --background: #1C1C1C;
-  --foreground: #121313;
+  --background: #0a0a0f;
+  --foreground: #111118;
+  --bg-button: #6EE7B7; 
+  --color-text: #F1F5F9;
+  --color-text-muted: #94A3B8;
+  --accent-blue: #60A5FA;
+  --accent-purple: #A78BFA;
+}
 
+@keyframes gradShift { 
+  0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} 
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
-  --bg-button: #26563A;
-
-  --color-text: #E3DACE;
-  --hover-text: #26563A;
+.animate-grad {
+  background-size: 300% 300%;
+  animation: gradShift 4s ease infinite;
 }
 
 @theme inline {
@@ -17,13 +28,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1C1C1C;
-    --foreground: #121313;
-  }
 }
 
 *{
